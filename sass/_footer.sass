@@ -1,0 +1,47 @@
+//footer
+.footer, .push
+    height: 150px
+
+.footer
+    padding-top: 30px
+    color: #fff
+    font-size: 12px
+    background: url(../img/footer__bg.png) no-repeat 50% 100%
+    background-size: cover
+    +box
+    +clr
+    .footer__copyright
+        width: 335px
+        float: left
+    .copyright
+        margin-bottom: 20px
+    .footer__dev
+        a
+            color: #c1c5d4
+    .footer__center
+        float: left
+        width: 445px
+        overflow: hidden
+    .footer__list
+        margin-left: 35px
+        min-width: 80px
+        display: inline-block
+        li
+            margin-bottom: 10px
+            display: block
+        a
+            color: #fff
+            font-size: 13px
+            font-weight: bold
+            text-decoration: underline
+            &:first-letter
+                text-transform: uppercase
+            &:hover
+                text-decoration: none
+        &:first-child
+            margin-left: 0
+    .footer__soc
+        float: right
+        width: 205px
+        p
+            margin-bottom: 5px

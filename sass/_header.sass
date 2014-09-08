@@ -1,0 +1,121 @@
+//header    
+.header
+    border-top: 2px solid #ffe59f
+    background: url(../img/header__bg.png) repeat-x 50% 100% 
+    background-size: contain
+    +box
+    .container
+        height: 154px
+        position: relative
+    .header__wrap
+        +clr
+    .header__left
+        float: left
+        width: 524px
+        +clr
+    .header__right
+        float: right
+        width: 500px
+    // .header__menu
+
+//logo
+.logo
+    float: left
+    margin: 10px 0 0 25px
+    display: inline-block
+    +s(logo)
+
+//searh
+.search
+    position: relative
+    margin-top: 28px
+    float: right
+    width: 266px
+    input
+        padding: 0 30px 0 20px
+        height: 36px
+        width: 100%
+        font-size: 13px
+        color: #adabab
+        border: 1px solid #d6d9dc
+        display: block
+        +placeholder-color(#adabab)
+        +box
+    .search__btn
+        position: absolute
+        right: 13px
+        top: 50%
+        margin-top: -7px
+        display: inline-block
+        +s(search__ico)
+//usaid
+.usaid
+    margin-top: 24px
+    +s(usaid__ico)
+
+//pact
+.pact
+    margin-top: 15px
+    +s(pact__ico)
+.pact, .usaid
+    float: right
+    margin-right: 58px
+    display: inline-block
+
+//language
+.language
+    float: right
+    padding: 34px 0 0 8px
+    width: 75px
+    height: 61px
+    font-size: 0
+    border-left: 1px solid #bfbfbf
+    +box
+    .language__item
+        color: #5f6370
+        padding: 0 5px
+        height: 22px
+        line-height: 20px
+        font-size: 14px
+        cursor: pointer
+        text-decoration: none
+        display: inline-block
+        +rob
+        &.is-active
+            color: #fff
+            background: #646568
+            +border-radius(7px 0 7px 0)
+//menu
+.menu
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    +g(#282828, #232324)
+    .menu__item
+        position: relative
+        display: inline-block
+        border-right: 1px solid #404143
+        a
+            padding: 0 26px 0 18px
+            height: 55px
+            line-height: 53px
+            text-transform: uppercase
+            text-decoration: none
+            color: #fff
+            display: inline-block
+            &:hover
+                text-decoration: underline
+        &:first-child
+            &:before
+                position: absolute
+                content: ''
+                top: 25px
+                right: 10px
+                +arr(9, 6, #7a7c87, b)
+        .ico
+            margin-right: 12px
+            margin-top: -3px
+            vertical-align: middle
+            &.ico_partner
+                margin-top: 0 
