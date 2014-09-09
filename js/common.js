@@ -4,5 +4,9 @@ head.ready(function() {
 	// 	$(".js-popup").hide();
 	// });
 
-	console.log($('body').html());
+	// var container = document.querySelector('.tags');
+	// var msnry = new Masonry( container, {
+	// 	columnWidth: 45,
+	// 	itemSelector: '.tags__link'
+	// });
 });

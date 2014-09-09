@@ -66,6 +66,7 @@ body
 // common blocks
 //out
 .out
+	min-width: 1024px
 	min-height: 100%
 	height: auto !important
 	height: 100%
@@ -79,7 +80,7 @@ body
 	padding: 0 18px
 	width: 1024px
 	+box
-	&.container_top
+	&.container_mod
 		padding: 0
 
 //title
@@ -107,3 +108,45 @@ body
 		+s(ico__date-black)
 	&.ico_time
 		+s(ico__date)
+
+//banners
+.banners
+	padding-top: 25px
+	font-size: 0
+	height: 199px
+	text-align: center
+	+border-radius(3px)
+	+box-shadow(inset 0 1px 6px rgba(0,0,0,.04))
+	+background-image(linear-gradient(top, rgba(230,230,230,.75) 0%, rgba(230,230,230,.15) 100%))
+	background-color: #eaeaea
+	+box
+	.banner
+		position: relative
+		width: 320px
+		height: 142px
+		margin-left: 14px
+		cursor: pointer
+		overflow: hidden
+		display: inline-block
+		&:first-child
+			margin-left: 0
+		img
+			width: 100%
+			display: block
+	.banner__name
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -52px 0 0 -52px
+		width: 104px
+		height: 104px
+		line-height: 104px
+		color: #fff
+		text-align: center
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: bold
+		+border-radius(50%)
+		z-index: 2
+		background-color: #7fcbed
+		background: rgba(#7fcbed, 0.7)
