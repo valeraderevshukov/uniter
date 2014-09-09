@@ -4,12 +4,38 @@
 	padding: 45px 0 55px
 	width: 1024px
 	+clr
+	.l-col1, .l-col2
+		padding: 0 17px
+		+box
 	.l-col1
 		float: left
 		width: 669px
 	.l-col2
 		float: right
 		width: 355px
-	.l-col1, .l-col2
-		padding: 0 17px
-		+box
+		.article__row
+			margin: 0
+			padding: 15px 0
+			border-bottom: 1px solid #d8e7f4
+			&:first-child
+				margin-top: 8px
+		.article__img
+			height: 74px
+			width: 74px
+			+border-radius(16px 0 16px 0)
+			&:hover
+				&:before
+					display: none
+		.article__text
+			padding: 0
+			width: 230px
+		.article__title
+			margin: 0
+			font-size: 15px
+		.top-line
+			&:before
+				width: 92px
+		.ollpreview
+			margin-top: 10px
+		.ollpreview__btn
+			margin-left: 92px
