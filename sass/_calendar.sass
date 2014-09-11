@@ -1,0 +1,71 @@
+//calendar
+.calendar
+	float: left
+	padding: 25px 20px 23px 23px
+	width: 365px
+	+border-radius(3px)
+	background-color: #fff
+	+box-shadow(0 2px 3px rgba(131,144,147,.35))
+	+box
+	.calendar__table
+		margin: 15px 0 10px
+		font-size: 16px
+		font-weight: bold
+		color: #fff
+		text-align: center
+		border-top: 1px solid #ddebf9
+		th, td
+			margin: 0 5px 5px 0
+			height: 41px
+			width: 41px
+			line-height: 41px
+			display: inline-block
+		th
+			font-size: 13px
+			font-weight: bold
+			color: #474a56
+		td
+			cursor: pointer
+			+border-radius(2px)
+			background-color: #4d4d4d
+			+background-image(linear-gradient(bottom, rgba(0,0,0,.08) 0%, rgba(255,255,255,.08) 100%))
+			+box
+			&:hover
+				+opacity(.9)
+			&.is-anothermonth
+				color: #5b6c7d
+				border: 1px solid #d0e8ff
+				background-color: #ebf4ff
+				+background-image(linear-gradient(bottom, rgba(0,0,0,.0) 0%, rgba(255,255,255,.0) 100%))
+			&.is-active
+				background-color: #ffcb03
+				+box-shadow(0 1px 0 #b88d00)
+				+background-image(linear-gradient(bottom, rgba(0,0,0,.25) 0%, rgba(255,255,255,.25) 100%))
+			&.is-active_shadow
+				background-color: #ffe480
+				+box-shadow(inset 0 2px 4px rgba(203,110,0,.75))
+				+background-image(linear-gradient(bottom, rgba(0,0,0,.25) 0%, rgba(255,255,255,.25) 100%))
+			&.is-active,
+			&.is-active_shadow
+				color: #453700
+	.calendar__btn
+		position: relative
+		height: 41px
+		width: 100%
+		line-height: 41px
+		color: #0076a3
+		border: 1px solid #cce6ff
+		+border-radius(2px)
+		background-color: #ebf4ff
+		+box
+		&:hover
+			span
+				border: none
+		&:active
+			top: -1px
+		.ico
+			margin-right: 16px
+			vertical-align: middle
+		span
+			height: 20px
+			border-bottom: 1px dotted #0076a3

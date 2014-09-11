@@ -51,7 +51,7 @@
 		line-height: 36px
 		width: 424px
 		text-align: left
-		z-index: 101
+		z-index: 300
 		+box
 		button
 			margin-left: 8px
@@ -106,7 +106,7 @@
 
 .top-line
 	position: relative
-	margin-top: 25px
+	margin-top: 5px
 	height: 2px
 	background: #bababa
 	&:before
@@ -121,6 +121,7 @@
 
 //article
 .article
+	+box
 	.article__row
 		margin-top: 8px
 		+clr
@@ -130,24 +131,13 @@
 		width: 160px
 		height: 118px
 		background: grey
-		overflow: hidden
 		+border-radius(28px 0 28px 0)
-		display: block
+		overflow: hidden
 		&:hover
 			img
 				+opacity(.9)
-			&:before
-				display: block
-		&:before
-			position: absolute
-			content: ''
-			top: 50%
-			left: 50%
-			margin: -32px 0 0 -32px
-			z-index: 1
-			display: none
-			+s(zoom__ico)
 		img
+			+border-radius(28px 0 28px 0)
 			display: block
 	.article__date
 		margin: 10px 35px 0 0
@@ -172,6 +162,22 @@
 		color: #444444
 		font-size: 13px
 		line-height: 1
+	&.article_left
+		float: right
+		padding-left: 30px
+		width: 624px
+		.article__row
+			margin-top: 0
+			margin-bottom: 34px
+			&:first-child
+				margin-top: 8px 
+		.article__img
+			width: 136px
+			height: 100px
+		.article__text
+			padding-top: 0
+		.article__date
+			margin: 0 20px 0 0
 
 //date
 .date

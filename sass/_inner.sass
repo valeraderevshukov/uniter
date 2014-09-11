@@ -1,0 +1,148 @@
+//content
+.content
+    margin-bottom: 19px
+    padding-bottom: 12px
+    color: #353535
+    font-size: 14px
+    letter-spacing: 0.4px
+    border-bottom: 1px solid #dbe9f7
+    a
+        color: #0076a3
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+    p
+        padding-bottom: 18px
+    .time
+        padding-bottom: 30px
+    .content__img
+        position: relative
+        float: left
+        margin-right: 40px
+        overflow: hidden
+        +border-radius(25px 0 25px 0)
+        display: inline-block
+        img
+            display: block
+    .content__info
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        padding: 8px 15px 10px 63px
+        color: #e2e2e5
+        font-style: italic
+        font-size: 11px
+        z-index: 2
+        background: #1c1e26
+        background: rgba(#1c1e26, .9)
+        .ico
+            position: absolute
+            left: 24px
+            top: 50%
+            margin-top: -12px
+    .content__table
+        margin-bottom: 40px
+        color: #294455
+        font-size: 14px
+        tr
+            &:nth-child(odd)
+                +border-radius(3px)
+                background-color: #e1f5ff
+                background: rgba(#e1f5ff, .5)
+        td
+            padding-left: 18px
+            height: 48px
+            line-height: 48px
+            +box
+            &:first-child
+                width: 474px
+            &:first-letter
+                text-transform: uppercase
+
+
+//time
+.time
+    color: #545454
+    font-size: 13px
+    .ico
+        margin-right: 6px
+        vertical-align: sub
+
+//gallery
+.gallery
+    position: relative
+    margin-bottom: 35px
+    text-align: center
+    overflow: hidden
+    font-size: 0
+    +border-radius(18px 0 18px 0)
+    background: url(../img/gallery__top-bg.png) no-repeat 0 0
+    background-size: cover
+    .gallery__in
+        margin-top: 1px
+        width: 543px
+        height: 362px
+        overflow: hidden
+        display: inline-block
+        img
+            width: 100%
+    .gallery__prev, .gallery__next
+        position: absolute
+        top: 180px
+        z-index: 101
+    .gallery__prev
+        left: 35px
+        +s(gallery__prev)
+    .gallery__next
+        right: 35px
+        +s(gallery__next)
+    .gallery__wrap
+        padding: 7px 0 0
+        text-align: center
+        background-color: #222
+        background: rgba(#222, .5)
+        +box-shadow(inset 1px 2px 3px rgba(0,0,0,.19))
+    .gallery__pager
+        width: 922px
+        overflow-x: auto
+        display: inline-block
+        white-space: nowrap
+        img
+            margin-left: 6px
+            width: 110px
+            height: 74px
+            cursor: pointer
+            &:first-child
+                margin-left: 0
+
+//doc
+.doc
+    padding-left: 16px
+    a
+        font-size: 16px
+    .doc__row
+        position: relative
+        margin-bottom: 27px
+        padding-left: 44px
+    .ico
+        position: absolute
+        top: 0
+        left: 0
+    .doc__size
+        padding-top: 6px
+        font-size: 11px
+
+//share
+.share
+    padding-left: 15px
+    height: 20px
+    line-height: 20px
+    .share__text, .share__soc
+        display: inline-block
+    .share__text
+        margin-right: 15px
+    .share__soc
+        margin-right: 10px
+        vertical-align: middle
+        cursor: pointer

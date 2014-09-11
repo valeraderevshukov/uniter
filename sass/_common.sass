@@ -72,24 +72,33 @@ body
 	height: 100%
 	margin: 0 auto -150px
 	background: #fcfcfc
-	background: url(../img/aut-bg.png) repeat-x 0 537px
+	background: url(../img/aut-bg.png) repeat-x 0 155px
+	&.out_main
+		background: url(../img/aut-bg.png) repeat-x 0 605px
+
 
 //container
 .container
 	margin: 0 auto
-	padding: 0 18px
+	padding: 0 17px
 	width: 1024px
+	+clr
 	+box
 	&.container_mod
 		padding: 0
 
 //title
 .title
+	padding: 30px 0 20px
 	color: #212121
 	font-size: 26px
-	line-height: 1
-	text-transform: uppercase
+	line-height: 1.2
 	+pfb
+	&:first-child,
+	&.title_top
+		padding-top: 0
+	&.title_table
+		padding-left: 15px
 
 //ico
 .ico
@@ -108,9 +117,26 @@ body
 		+s(ico__date-black)
 	&.ico_time
 		+s(ico__date)
+	&.ico_calendar
+		+s(calendar__ico)
+	&.ico_info
+		+s(info__ico)
+	&.ico_exel
+		+s(excel__ico)
+	&.ico_word
+		+s(word__ico)
+	&.ico_upd
+		+s(calendar__upd)
+	&.ico_rss
+		+s(rss__ico)
+	&.ico_prev
+		+s(pag-prev)
+	&.ico_next
+		+s(pag-next)
 
 //banners
 .banners
+	margin-top: 55px
 	padding-top: 25px
 	font-size: 0
 	height: 199px
@@ -120,6 +146,8 @@ body
 	+background-image(linear-gradient(top, rgba(230,230,230,.75) 0%, rgba(230,230,230,.15) 100%))
 	background-color: #eaeaea
 	+box
+	.container
+		font-size: 0
 	.banner
 		position: relative
 		width: 320px
@@ -150,3 +178,93 @@ body
 		z-index: 2
 		background-color: #7fcbed
 		background: rgba(#7fcbed, 0.7)
+
+//breadcrumbs
+.breadcrumbs
+	padding: 25px 0 35px
+	li
+		padding-right: 10px
+		color: #0076a3
+		font-weight: bold
+		display: inline-block
+	a, i
+		font-size: 13px
+		font-weight: normal
+	a
+		color: #0076a3
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	i
+		padding-left: 10px
+
+//scroll-pane
+.scroll-pane
+	.jspContainer
+		padding-bottom: 22px
+	.jspHorizontalBar
+		background: none
+		.jspDrag
+			top: 1px
+			height: 7px
+			background: #818181
+			+border-radius(2px)
+	.jspTrack
+		width: 18px 
+		background: none
+
+//select
+.select
+	position: relative
+	cursor: pointer
+	font-size: 13px
+	font-weight: bold
+	display: inline-block
+	&.select_year
+		width: 67px
+	&.select_month
+		margin-left: 13px
+		width: 117px
+.select__text
+	position: relative
+	display: block
+	padding: 0 20px 0 10px 
+	height: 33px
+	line-height: 33px
+	color: #212121
+	+border-radius(3px)
+	+box-shadow(0 1px 1px rgba(3,120,164,.33), inset 0 0 0 1px rgba(255,255,255,.29))
+	+background-image(linear-gradient(bottom, #ebf5ff 0%, #f5faff 100%))
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	&:after
+		content: ""
+		position: absolute
+		right: 10px
+		top: 50%
+		margin-top: -3px
+		border-style: solid
+		+arr(7, 6, #525151, b)
+.select__list
+	position: absolute
+	display: none
+	left: 0
+	right: 0
+	top: 100%
+	margin-top: -1px
+	z-index: 100
+	max-height: 200px
+	overflow-x: hidden
+	overflow-y: auto
+	background: #fff
+	+border-radius(0 0 3px 3px)
+	+box-shadow(0 1px 1px rgba(3,120,164,.33), inset 0 0 0 1px rgba(255,255,255,.29))
+	+background-image(linear-gradient(bottom, #ebf5ff 0%, #f5faff 100%)) 
+	li
+		padding: 5px 11px 
+		cursor: pointer
+		line-height: 1
+		&:hover
+			background: #717791
+			color: #fff 
