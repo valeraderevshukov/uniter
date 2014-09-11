@@ -138,6 +138,7 @@ body { font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; }
 .footer .footer__copyright { width: 335px; float: left; }
 .footer .copyright { margin-bottom: 20px; }
 .footer .footer__dev a { color: #c1c5d4; }
+.footer .footer__dev a:hover { text-decoration: none; }
 .footer .footer__center { float: left; width: 445px; overflow: hidden; }
 .footer .footer__list { margin-left: 35px; min-width: 80px; display: inline-block; }
 .footer .footer__list li { margin-bottom: 10px; display: block; }
@@ -147,13 +148,14 @@ body { font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; }
 .footer .footer__list:first-child { margin-left: 0; }
 .footer .footer__soc { float: right; width: 205px; }
 .footer .footer__soc p { margin-bottom: 5px; }
+.footer .footer__soc a:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; }
 
 .slider { height: 449px; color: #212121; overflow: hidden; }
 .slider .slider__item { position: relative; height: 449px; width: 100%; background-size: cover !important; background-repeat: no-repeat; background-position: 50% 50%; }
 .slider .slider__container { top: 265px; bottom: 0; }
 .slider .slider__button { top: 226px; z-index: 101; }
 .slider .slider__container, .slider .slider__button { position: absolute; left: 50%; margin-left: -512px; width: 1024px; }
-.slider .slider__block { position: absolute; top: 0; right: 50px; bottom: 0; padding: 23px; width: 462px; background: #ffcb03; background: rgba(255, 203, 3, 0.95); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.slider .slider__block { position: absolute; top: 0; right: 50px; bottom: 0; width: 462px; z-index: 200; background: #ffcb03; background: rgba(255, 203, 3, 0.95); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .slider .slider__block:before { position: absolute; content: ""; top: 0; right: -50px; bottom: 0; width: 50px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95); opacity: 0.95; background: url(../img/bg-slider-block.png) repeat-y 100% 0; }
 .slider .slider__pager { position: absolute; top: 0; right: 0; padding-left: 4px; height: 39px; line-height: 36px; width: 424px; text-align: left; z-index: 300; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .slider .slider__pager button { margin-left: 8px; height: 14px; width: 14px; vertical-align: middle; border: 1px solid #ffcb04; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: none; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -166,6 +168,7 @@ body { font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; }
 .slider .slider__prev i { background: url('../img/icons-sd49c099dc7.png') 0 -706px no-repeat; width: 10px; height: 17px; }
 .slider .slider__next { right: 426px; }
 .slider .slider__next i { background: url('../img/icons-sd49c099dc7.png') 0 -472px no-repeat; width: 9px; height: 17px; }
+.slider .slider__slide { padding: 23px; width: 100%; height: 100%; }
 
 .top-line { position: relative; margin-top: 5px; height: 2px; background: #bababa; }
 .top-line:before { position: absolute; content: ""; top: 0; left: 0; height: 2px; width: 291px; z-index: 1; background: #878787; }
@@ -209,6 +212,7 @@ body { font-family: Arial, sans-serif; font-size: 13px; line-height: 1.4; }
 .subscription input::-webkit-input-placeholder { color: #464646; }
 .subscription .subscription__btn { position: absolute; top: 0; right: 0; width: 57px; height: 40px; z-index: 1; -moz-border-radius: 0 0 20px/0 0 40px; -webkit-border-radius: 0; border-radius: 0 0 20px/0 0 40px; background: #4cb7e7; }
 .subscription .subscription__btn:before { position: absolute; content: ""; top: 50%; left: 8px; margin: -8px 0 0 0; background: url('../img/icons-sd49c099dc7.png') 0 -803px no-repeat; width: 34px; height: 16px; }
+.subscription .subscription__btn:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; }
 
 .tags { margin-top: 25px; padding-right: 45px; }
 .tags .tags__title { padding: 0 0 25px 17px; color: #464646; font-weight: 500; font-size: 17px; font-family: "Roboto", sans-serif; }

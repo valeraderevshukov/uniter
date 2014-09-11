@@ -51,36 +51,41 @@
 		data-cycle-pause-on-hover="true"
 		data-cycle-pager=".slider__pager"
 		data-cycle-pager-template="<button></button>"
-		data-cycle-pager=".example-pager"
+
 		>
-		<div class="slider__item" style="background: url(img/slider__img.png)">
-			<div class="slider__container">
-				<div class="slider__block">
+		<div class="slider__item" id="pauser" style="background: url(img/slider__img.png)">
+		</div>
+		<div class="slider__item" id="pauser" style="background: url(img/slider__img.png)">
+		</div>
+		<div class="slider__item" id="pauser" style="background: url(img/slider__img.png)">
+		</div>
+		<div class="slider__item" id="pauser" style="background: url(img/slider__img.png)">
+		</div>
+		<div class="slider__container">
+			<div class="slider__block cycle-slideshow" 
+				data-cycle-fx="fade"
+				data-cycle-timeout="1500"
+				data-cycle-prev=".slider__prev"
+				data-cycle-next=".slider__next"
+				data-cycle-slides=".slider__slide"
+				data-cycle-pager-template=""
+				data-cycle-pager=".slider__pager"
+				data-cycle-pause-on-hover="#pauser"
+				>
+				<div class="slider__slide">
 					<h3 class="slider__title">Pact шукає асистента програм та комунікації</h3>
 					<p>Pact шукає асистента з програм та комунікації. Кінцевий термін подання заявок - 30 вересня. Деталі доступні англійською мовою. </p>
 				</div>
-			</div>
-		</div>
-		<div class="slider__item" style="background: url(img/slider__img.png)">
-			<div class="slider__container">
-				<div class="slider__block">
-					<h3 class="slider__title">Pact шукає асистента програм та комунікації</h3>
+				<div class="slider__slide">
+					<h3 class="slider__title">2Pact шукає асистента програм та комунікації</h3>
 					<p>Pact шукає асистента з програм та комунікації. Кінцевий термін подання заявок - 30 вересня. Деталі доступні англійською мовою. </p>
 				</div>
-			</div>
-		</div>
-		<div class="slider__item" style="background: url(img/slider__img.png)">
-			<div class="slider__container">
-				<div class="slider__block">
-					<h3 class="slider__title">Pact шукає асистента програм та комунікації</h3>
+				<div class="slider__slide">
+					<h3 class="slider__title">3Pact шукає асистента програм та комунікації</h3>
 					<p>Pact шукає асистента з програм та комунікації. Кінцевий термін подання заявок - 30 вересня. Деталі доступні англійською мовою. </p>
 				</div>
-			</div>
-		</div>
-		<div class="slider__item" style="background: url(img/slider__img.png)">
-			<div class="slider__container">
-				<div class="slider__block">
-					<h3 class="slider__title">Pact шукає асистента програм та комунікації</h3>
+				<div class="slider__slide">
+					<h3 class="slider__title">4Pact шукає асистента програм та комунікації</h3>
 					<p>Pact шукає асистента з програм та комунікації. Кінцевий термін подання заявок - 30 вересня. Деталі доступні англійською мовою. </p>
 				</div>
 			</div>
@@ -248,15 +253,15 @@
 		<div class="container">
 			<div class="banner">
 				<img src="http://placehold.it/320x140" alt="img">
-				<div class="banner__name">БАННЕР</div>
+				<!-- <div class="banner__name">БАННЕР</div> -->
 			</div>
 			<div class="banner">
 				<img src="http://placehold.it/320x140" alt="img">
-				<div class="banner__name">БАННЕР</div>
+				<!-- <div class="banner__name">БАННЕР</div> -->
 			</div>
 			<div class="banner">
 				<img src="http://placehold.it/320x140" alt="img">
-				<div class="banner__name">БАННЕР</div>
+				<!-- <div class="banner__name">БАННЕР</div> -->
 			</div>
 		</div>
 	</div>

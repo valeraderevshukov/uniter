@@ -28,8 +28,8 @@
 		top: 0
 		right: 50px
 		bottom: 0
-		padding: 23px
 		width: 462px
+		z-index: 200
 		background: #ffcb03
 		background: rgba(#ffcb03, 0.95)
 		+box
@@ -103,6 +103,10 @@
 		right: 426px
 		i
 			+s(next__arr)
+	.slider__slide
+		padding: 23px
+		width: 100%
+		height: 100%
 
 .top-line
 	position: relative
@@ -269,6 +273,8 @@
 			left: 8px
 			margin: -8px 0 0 0
 			+s(subscription__btn-ico)
+		&:hover
+			+opacity(0.9)
 
 //tags
 .tags
