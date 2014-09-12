@@ -12,17 +12,20 @@
 		background-size: cover !important
 		background-repeat: no-repeat
 		background-position: 50% 50%
-	.slider__container
-		top: 265px
-		bottom: 0
-	.slider__button
-		top: 226px
-		z-index: 101
+		z-index: 0 !important
 	.slider__container, .slider__button
 		position: absolute
 		left: 50%
 		margin-left: -512px
 		width: 1024px
+	.slider__container
+		top: 265px
+		bottom: 0
+	.slider__button
+		height: 39px
+		top: 226px
+		z-index: 700
+		+clr
 	.slider__block
 		position: absolute
 		top: 0
