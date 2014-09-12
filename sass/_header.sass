@@ -91,33 +91,78 @@
     left: 0
     right: 0
     bottom: 0
+    font-size: 0
     background-color: #212121
     +box-shadow(inset 0 1px 0 rgba(0,0,0,.1))
     +background-image(linear-gradient(bottom, rgba(0,0,0,.03) 0%, rgba(255,255,255,.03) 100%))
     .menu__item
-        position: relative
         display: inline-block
         border-right: 1px solid #404143
+        +transition(all 0.2s linear)
+        &:hover
+            background: #303132
+            +background-image(linear-gradient(bottom, #303132 0%, #3f4041 100%))
+            .menu__list
+                visibility: visible
+                +opacity(1)
+            a
+                &:before
+                    +rotate(180)
+        &:first-child
+            a
+                &:before
+                    position: absolute
+                    content: ''
+                    top: 23px
+                    right: 10px
+                    +transition(all 0.2s linear)
+                    +arr(9, 6, #7a7c87, b)
         a
-            padding: 0 26px 0 18px
+            position: relative
+            padding: 0 30px 0 27px
             height: 55px
             line-height: 53px
             text-transform: uppercase
             text-decoration: none
             color: #fff
+            font-size: 12px
+            +box-shadow(inset 0 1px 0 rgba(0,0,0,.3))
             display: inline-block
-            &:hover
-                text-decoration: underline
-        &:first-child
-            &:before
-                position: absolute
-                content: ''
-                top: 25px
-                right: 10px
-                +arr(9, 6, #7a7c87, b)
         .ico
             margin-right: 12px
             margin-top: -3px
             vertical-align: middle
             &.ico_partner
                 margin-top: 0 
+    .menu__list
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        padding: 18px 0
+        font-size: 0
+        z-index: 205
+        background: #2e2e2f
+        visibility: hidden
+        +transition(all 0.2s linear)
+        +opacity(0)
+        +box
+        li
+            padding-left: 35px
+            height: 27px
+            width: 25%
+            display: inline-block
+            +box
+        a
+            height: auto
+            line-height: 1.4
+            color: #f9c40a
+            font-size: 12px
+            text-transform: none
+            +transition(all 0.1s linear)
+            +box-shadow(none)
+            display: inline
+            &:hover
+                color: #ffe382
+            &:before
+                display: none
