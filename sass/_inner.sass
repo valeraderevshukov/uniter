@@ -81,12 +81,12 @@
     background-size: cover
     .gallery__in
         margin-top: 1px
-        width: 543px
-        height: 362px
-        overflow: hidden
-        display: inline-block
+        width: 100%
+    .gallery__item
+        width: 100%
+        text-align: center
         img
-            width: 100%
+            display: inline-block
     .gallery__prev, .gallery__next
         position: absolute
         top: 180px
@@ -110,7 +110,7 @@
         white-space: nowrap
         img
             margin-left: 6px
-            width: 110px
+            width: auto
             height: 74px
             cursor: pointer
             &:first-child
